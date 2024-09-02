@@ -2,6 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+    base: "/notes/",
     title: "前端笔记",
     description:
         "欢迎来到前端爱好者学习笔记！这是一个专为热爱前端开发的学习者和从业者打造的知识宝库，无论你是初学者，还是已有一定经验的开发者，这里都能找到适合你的内容。",
