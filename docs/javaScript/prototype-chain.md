@@ -14,5 +14,18 @@
 #### 例如
 
 ```js
+function Person(name) {
+    this.name = name;
+}
 
+Person.prototype.greet = function() {
+    console.log('Hello, ' + this.name);
+};
+
+const person = new Person('Alice');
+person.greet(); // 'Hello, Alice'
+
+console.log(person.__proto__ === Person.prototype); // true
+console.log(Person.prototype.__proto__ === Object.prototype); // true
+console.log(Object.prototype.__proto__ === null); // true
 ```
