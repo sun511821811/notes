@@ -374,6 +374,105 @@ export default defineConfig({
                     },
                 ],
             },
+            {
+                text: "打包工具",
+                collapsed: true,
+                items: [
+                    {
+                        text: "webpack",
+                        collapsed: true,
+                        items: [
+                            {
+                                text: "基础",
+                                link: "/Packaging-tools/webpack/basic",
+                            },
+                            {
+                                text: "Loader",
+                                link: "/Packaging-tools/webpack/loader",
+                            },
+                            {
+                                text: "Plugin",
+                                link: "/Packaging-tools/webpack/plugin",
+                            },
+                            {
+                                text: "DevServer",
+                                link: "/Packaging-tools/webpack/dev-server",
+                            },
+                            {
+                                text: "Hot Module Replacement",
+                                link: "/Packaging-tools/webpack/hot-module-replacement",
+                            },
+                            {
+                                text: "Code Splitting",
+                                link: "/Packaging-tools/webpack/code-splitting",
+                            },
+                            {
+                                text: "Tree Shaking",
+                                link: "/Packaging-tools/webpack/tree-shaking",
+                            },
+                            {
+                                text: "Optimization",
+                                link: "/Packaging-tools/webpack/optimization",
+                            },
+                        ],
+                    },
+                    {
+                        text: "Vite",
+                        collapsed: true,
+                        items: [
+                            {
+                                text: "基础",
+                                link: "/Packaging-tools/vite/basic",
+                            },
+                            {
+                                text: "Feature",
+                                link: "/Packaging-tools/vite/feature",
+                            },
+                            {
+                                text: "Performance",
+                                link: "/Packaging-tools/vite/performance",
+                            },
+                            {
+                                text: "Compatibility",
+                                link: "/Packaging-tools/vite/compatibility",
+                            },
+                            {
+                                text: "Vite 新特性",
+                                link: "/Packaging-tools/vite/",
+                            },
+                            // 插件
+                            {
+                                text: "Vue Plugin",
+                                link: "/Packaging-tools/vite/vue-plugin",
+                            },
+                            {
+                                text: "React Plugin",
+                                link: "/Packaging-tools/vite/react-plugin",
+                            },
+                            {
+                                text: "TypeScript Plugin",
+                                link: "/Packaging-tools/vite/typescript-plugin",
+                            },
+                            {
+                                text: "ESLint Plugin",
+                                link: "/Packaging-tools/vite/eslint-plugin",
+                            },
+                            {
+                                text: "Prettier Plugin",
+                                link: "/Packaging-tools/vite/prettier-plugin",
+                            },
+                            {
+                                text: "Markdown Plugin",
+                                link: "/Packaging-tools/vite/markdown-plugin",
+                            },
+                            {
+                                text: "CSS Modules Plugin",
+                                link: "/Packaging-tools/vite/css-modules-plugin",
+                            },
+                        ],
+                    },
+                ],
+            },
         ],
 
         socialLinks: [
