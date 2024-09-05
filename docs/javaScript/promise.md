@@ -103,6 +103,40 @@ Promise.rece([
 });
 ```
 
+5. Promise.allSetted: Promise.allSetted 会等待所有任务完成,无论成功还是失败.它会返回每个任务的结果,包括成功或失败的状态
+
+```js
+async function fetchData(url, shouldFail = false) {
+    return new Promise(function (resolve, reject) {
+        setTimeout(() => {
+            if (shouldFail) {
+                reject(`Error fetching data from ${url}`);
+            } else {
+                resolve(`Data from ${url}`);
+            }
+        }, 1000);
+    });
+}
+
+async function fetchAllDataWithAllSetted() {
+    const urls = [
+        fetchData("https://api.example.com/1"),
+        fetchData("https://api.example.com/2", true), // 这个请求会报错
+        fetchData("https://api.example.com/3"),
+    ];
+    const results = await Promise.allSetted(urls);
+    results.forEach((result, index) => {
+        if (result.status === " Fulfilled") {
+            console.log(`Request ${index + 1} succeeded:`, result.value);
+        } else {
+            console.error(`Request ${index + 1} failed:`, result.reason);
+        }
+    });
+}
+
+fetchAllDataWithAllSetted();
+```
+
 ## 总结
 
 -   Promise 是一种管理异步操作的方式, 它帮助避免 "回调地狱"

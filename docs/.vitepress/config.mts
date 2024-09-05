@@ -158,6 +158,31 @@ export default defineConfig({
                                 text: "ES6+ 新特性",
                                 link: "/javaScript/es6-plus",
                             },
+                            // 数组的方法
+                            {
+                                text: "数组的扩展方法",
+                                link: "/javaScript/array-methods",
+                            },
+                            // 对象的操作方法
+                            {
+                                text: "对象的扩展方法",
+                                link: "/javaScript/object-methods",
+                            },
+                            // 字符串的操作方法
+                            {
+                                text: "字符串的扩展方法",
+                                link: "/javaScript/string-methods",
+                            },
+                            // 正则的操作方法
+                            {
+                                text: "正则的扩展方法",
+                                link: "/javaScript/regex-methods",
+                            },
+                            // AJAX
+                            {
+                                text: "AJAX",
+                                link: "/javaScript/Ajax",
+                            },
                         ],
                     },
                 ],
