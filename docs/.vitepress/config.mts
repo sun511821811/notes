@@ -274,6 +274,16 @@ export default defineConfig({
                                 text: "uniapp 新特性",
                                 link: "/Framework-notes/uniapp/",
                             },
+                            // 全局弹窗
+                            {
+                                text: "全局弹窗待记录",
+                                link: "/Framework-notes/uniapp/global-popup",
+                            },
+                            // 其他
+                            {
+                                text: "其他",
+                                link: "/Framework-notes/uniapp/other",
+                            },
                         ],
                     },
                 ],
@@ -472,6 +482,10 @@ export default defineConfig({
                         ],
                     },
                 ],
+            },
+            {
+                text: "微米名片",
+                link: "/micro-card",
             },
         ],
 
